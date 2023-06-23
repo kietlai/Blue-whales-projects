@@ -29,6 +29,13 @@ const features = [
     icon: LightBulbIcon,
   },
   {
+    name: 'Treehugger',
+    description:
+      '11 facts about blue whales, the largest animals ever on earth. (2019, July 30). Treehugger. https://www.treehugger.com/facts-about-blue-whales-largest-animals-ever-known-earth-4858813',
+    href: 'https://www.treehugger.com/facts-about-blue-whales-largest-animals-ever-known-earth-4858813',
+    icon: LightBulbIcon,
+  },
+  {
     name: 'IUCN Red List',
     description:
       '"The IUCN Red List of Threatened Species." IUCN Red List of Threatened Species, www.iucnredlist.org/species/2477/156923585#geographic-range.',
