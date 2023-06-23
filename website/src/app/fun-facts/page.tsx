@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, ExclamationCircleIcon, LightBulbIcon, AcademicCapIcon, PhotoIcon} from '@heroicons/react/24/outline'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, ScaleIcon, ChartBarIcon, SpeakerWaveIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -10,7 +11,21 @@ const navigation = [
   { name: 'Citations', href: '/citations' },
   { name: 'Fun Facts!', href: '/fun-facts' },
   { name: 'Solutions', href: '/solutions' },
+]
 
+const features = [
+  {
+    name: 'They Can Weigh as Much as 30 Elephants.',
+    icon: ScaleIcon,
+  },
+  {
+    name: 'They Can Grow More than 100 Feet Long!',
+    icon: ChartBarIcon,
+  },
+  {
+    name: 'They Are The Loudest Animals on The Planet.',
+    icon: SpeakerWaveIcon,
+  },
 ]
 
 
@@ -94,8 +109,34 @@ export default function HomePage() {
           </Dialog>
         </header>
       <section>
-        <div className='flex text-center h-full py-64'>
-        <h1 className='text-6xl text-transparent font-bold bg-clip-text bg-gradient-to-r from-emerald-300 to-blue-600 sm:text-9xl'>Working Progress Hasn&apos;t Been Done Yet!</h1> 
+        <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="lg:pr-8 lg:pt-4">
+                <div className="lg:max-w-lg">
+                  <h2 className="text-base font-semibold leading-7 text-blue-400">Nuggets Of Knowledge</h2>
+                  <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Fun Facts!</p>
+                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
+                    {features.map((feature) => (
+                      <div key={feature.name} className="relative pl-9 text-2xl">
+                        <dt className="inline font-semibold text-white">
+                          <feature.icon className="absolute left-1 top-1 h-7 w-7 text-blue-500" aria-hidden="true" />
+                          {feature.name}
+                        </dt>{' '}
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              </div>
+              <img
+                  src="https://files.worldwildlife.org/wwfcmsprod/images/Blue_Whale/story_full_width/2x7x8ynwvz_shutterstock_764499823.jpg"
+                  alt="Product screenshot"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                width={2432}
+                height={1442}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>
