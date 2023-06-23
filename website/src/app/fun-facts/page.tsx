@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, ExclamationCircleIcon, LightBulbIcon, AcademicCapIcon, PhotoIcon} from '@heroicons/react/24/outline'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, ScaleIcon, ChartBarIcon, SpeakerWaveIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, ScaleIcon, ChartBarIcon, SpeakerWaveIcon, ClockIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -23,8 +23,20 @@ const features = [
     icon: ChartBarIcon,
   },
   {
-    name: 'They Are The Loudest Animals on The Planet.',
+    name: 'They Are The Loudest Animals on The Planet!',
     icon: SpeakerWaveIcon,
+  },
+  {
+    name: 'They Can Eat about 2.5 Toyota Camrys! (9,000 Pounds!)',
+    icon: ScaleIcon,
+  },
+  {
+    name: 'They Live a Long Time! Around 90-100 Years!',
+    icon: ClockIcon,
+  },
+  {
+    name: 'They Have the Biggest Tongue! It can Weigh as Much as An Elephant!',
+    icon: ScaleIcon,
   },
 ]
 
@@ -129,9 +141,9 @@ export default function HomePage() {
                 </div>
               </div>
               <img
-                  src="https://files.worldwildlife.org/wwfcmsprod/images/Blue_Whale/story_full_width/2x7x8ynwvz_shutterstock_764499823.jpg"
-                  alt="Product screenshot"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                src="https://files.worldwildlife.org/wwfcmsprod/images/Blue_Whale/story_full_width/2x7x8ynwvz_shutterstock_764499823.jpg"
+                alt="Product screenshot"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[70rem] md:-ml-4 lg:-ml-0"
                 width={2432}
                 height={1442}
               />
